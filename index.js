@@ -27,7 +27,7 @@ const addNewLink = function (name) {
   navbar.appendChild(newLink);
 };
 
-addNewLink("New");
+// addNewLink("New");
 
 // EX12) Write a function to change the color of the main title
 
@@ -35,7 +35,7 @@ const changeTitle = function (newColor) {
   mainTitle.style.color = newColor;
 };
 
-changeTitle("pink");
+// changeTitle("pink");
 
 // EX13) Write a function to change the background of the jumbotron
 
@@ -46,7 +46,7 @@ const changeJumbotronBg = function (newColor) {
   jumbotron.style.backgroundColor = newColor;
 };
 
-changeJumbotronBg("green");
+// changeJumbotronBg("green");
 
 // EX14) Write a function to remove all the links under "Elsewhere"
 
@@ -54,7 +54,7 @@ const removeLinks = function () {
   elsewhereLinks.innerHTML = "";
 };
 
-removeLinks();
+// removeLinks();
 
 // EX15) Write a function to change the column size for heading in jumbotron
 
@@ -63,7 +63,7 @@ const headingColumnSize = function (colNumber) {
   jumbotronHeadingColumnContainer.classList.add(colNumber);
 };
 
-headingColumnSize("col-6");
+// headingColumnSize("col-6");
 
 // EX16) Write a function to remove the "Search" magnifying glass icon
 
@@ -71,19 +71,17 @@ const removeMagnifyingGlass = function () {
   magnifyingGlass.remove();
 };
 
-removeMagnifyingGlass();
+// removeMagnifyingGlass();
 
 // EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
 
 const trimStartOfBlogPostParagraphs = function () {
   for (post of blogPostsParagraphs) {
-    // let trimmed = post.innerText.slice(50);
-    // post.innerText = trimmed;
     post.innerText = post.innerText.slice(50);
   }
 };
 
-trimStartOfBlogPostParagraphs();
+// trimStartOfBlogPostParagraphs();
 
 // EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
 
