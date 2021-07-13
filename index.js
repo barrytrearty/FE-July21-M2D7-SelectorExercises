@@ -7,20 +7,15 @@ const magnifyingGlass = document.querySelector("a.text-muted svg");
 const blogPostsParagraphs = document.querySelectorAll(
   ".blog-post p:nth-child(3)"
 );
+const elsewhereLinks = document.querySelector(
+  "aside.blog-sidebar div:nth-child(3) ol"
+);
 const newerButton = document.querySelectorAll("nav.blog-pagination .btn")[1];
 const olderButton = document.querySelectorAll("nav.blog-pagination .btn")[0];
 const blogMain = document.getElementsByClassName("blog-main")[0];
-
-console.log(olderButton);
-
-// console.log(blogPosts);
-
 const jumbotronHeadingColumnContainer = document.querySelector(
   ".jumbotron div:first-child"
 );
-
-const elsewhereLinks = document.querySelectorAll("div.p-4 li");
-console.log(elsewhereLinks);
 
 // EX11) Write a function to add a new link into the navbar
 
@@ -33,6 +28,7 @@ const addNewLink = function (name) {
 };
 
 addNewLink("New");
+
 // EX12) Write a function to change the color of the main title
 
 const changeTitle = function (newColor) {
@@ -53,6 +49,12 @@ const changeJumbotronBg = function (newColor) {
 changeJumbotronBg("green");
 
 // EX14) Write a function to remove all the links under "Elsewhere"
+
+const removeLinks = function () {
+  elsewhereLinks.innerHTML = "";
+};
+
+removeLinks();
 
 // EX15) Write a function to change the column size for heading in jumbotron
 

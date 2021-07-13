@@ -20,6 +20,7 @@
       div.jumbotron div.col-md-6 h1 {
         color: blue;
       }
+
       /* EX2) Write a selector to target every children of the navbar */
       a.p-2.text-muted {
         color: blue !important;
@@ -56,21 +57,23 @@
 
       /* EX8) Write a selector to target the second post author */
 
-      /* p.blog-post-meta a {
+      div.blog-main div:nth-child(3) p.blog-post-meta a {
         color: red;
-      } */
+      }
 
       /* EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly */
 
-      /* footer p a:first-child {
-        background-color: royalblue;
-      } */
+      body p:last-child a:not(.jumbotron a) {
+        background-color: rgb(101, 91, 136);
+      }
 
       /* EX10) Write a selector to target the footer */
 
       footer {
         background-color: rosybrown;
       }
+
+      /* End of exercises */
     </style>
     <meta charset="utf-8" />
     <meta
